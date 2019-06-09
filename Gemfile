@@ -10,6 +10,7 @@ gem 'rack-cors'
 gem 'fast_jsonapi'
 
 group :development, :test do
+  gem 'rspec'
   gem 'rspec-rails'
   gem 'faker', git: 'https://github.com/stympy/faker'
 end
@@ -18,9 +19,11 @@ group :test do
   gem 'factory_bot_rails'
   gem 'shoulda-matchers'
   gem 'database_cleaner'
+  gem 'simplecov'
 end
 
 group :development do
+  gem 'guard'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'

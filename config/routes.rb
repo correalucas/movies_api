@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :v1 do
+    get 'libraries' => 'libraries#index'
+
+    get 'catalogues' => 'catalogues#index'
+    get 'movies' => 'catalogues#movies'
+    get 'seasons' => 'catalogues#seasons'
+
+    post 'purchase' => 'options#purchase'
+  end
 end

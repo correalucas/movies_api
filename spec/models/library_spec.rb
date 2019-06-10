@@ -14,4 +14,9 @@ RSpec.describe Library, type: :model do
       it { expect { subject.dup.save! }.to raise_error(ActiveRecord::RecordInvalid) }
     end
   end
+
+  describe '.set_expired' do
+    before { subject.set_expired }
+    it { expect(subject.alive).to be(false) }
+  end
 end

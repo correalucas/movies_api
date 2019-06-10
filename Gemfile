@@ -9,6 +9,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'rack-cors'
 gem 'fast_jsonapi'
 gem 'will_paginate'
+gem 'sidekiq'
 
 group :development, :test do
   gem 'rspec'

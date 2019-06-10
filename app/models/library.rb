@@ -27,6 +27,6 @@ class Library < ApplicationRecord
   end
 
   def add_to_expiration_queue
-    ExpireLibraryWorker.perform_in(option.expiration.days, id)
+    ::ExpireLibraryWorker.perform_in(option.expiration.days, id)
   end
 end

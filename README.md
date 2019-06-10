@@ -1,24 +1,41 @@
-# README
+# Movies API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple movies API project.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+Follow these easy steps to install and start the app:
 
-* System dependencies
+### Set up Rails app
 
-* Configuration
+First, install the gems required by the application:
+```
+  bundle
+```
 
-* Database creation
+Then, run:
+```
+  rails db:create
+  rails db:migrate
+  rails db:seed
+```
 
-* Database initialization
+### Tests
 
-* How to run the test suite
+Run the application Rspec tests:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+  bundle exec rspec
+```
 
-* Deployment instructions
+### Start the app
 
-* ...
+Start the Rails app:
+
+    bundle exec rails server
+
+## Documentation
+
+  How to consume the API's:
+
+- [methods](docs/methods.md)

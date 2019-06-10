@@ -33,6 +33,7 @@ Run the application Rspec tests:
 Start the Rails app:
 
     bundle exec rails server
+    bundle exec sidekiq
 
 ## Documentation
 
